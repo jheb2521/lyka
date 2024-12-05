@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+      color: white;
+      overflow: hidden;
+    }
+
+    .content {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <img src="lyka.jpg" alt="Missing you" />
+    <h1>I Miss You So Much</h1>
+  </div>
+</body>
+</html>
